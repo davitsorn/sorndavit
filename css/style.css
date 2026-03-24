@@ -1,0 +1,159 @@
+body{
+    margin: 0;
+    font-family: 'Segoe UI', sans-serif;
+    color: white;
+    scroll-behavior: smooth;
+}
+
+/* ===== VIDEO BACKGROUND ===== */
+.video-bg{
+    position: fixed;
+    top:0;
+    left:0;
+    width:100%;
+    height:100%;
+    object-fit: cover;
+    z-index:-1;
+    filter: brightness(0.4);
+}
+
+/* ===== NAVBAR ===== */
+.navbar{
+    position: fixed;
+    top:0;
+    width:100%;
+    background: rgba(0,0,0,0.6);
+    backdrop-filter: blur(10px);
+    padding:15px 0;
+    z-index:1000;
+}
+.section {
+            padding: 100px;
+            text-align: center;
+            margin-top: 5%;
+        }
+.navbar a{
+    color:white;
+    text-decoration:none;
+    font-weight:500;
+    transition:0.3s;
+}
+
+.navbar a:hover{
+    color:aqua;
+}
+
+/* space under navbar */
+.container{
+    margin-top:80px;
+}
+
+/* ===== HERO ===== */
+.hero{
+    min-height: 90vh;
+    display:flex;
+    align-items:center;
+}
+
+.profile img{
+    width:150px;
+    height:150px;
+    border-radius:50%;
+    border:3px solid aqua;
+}
+
+/* typing */
+.typing{
+    font-size:40px;
+    border-right:3px solid white;
+    white-space:nowrap;
+    overflow:hidden;
+    width:0;
+    animation:typing 4s steps(30,end) forwards, blink 0.7s infinite;
+}
+
+@keyframes typing{
+    from{width:0}
+    to{width:60%}
+}
+@keyframes blink{
+    50%{border-color:transparent}
+}
+
+/* ===== SECTION ===== */
+.section{
+    padding:80px 0;
+}
+
+.section h2{
+    text-align:center;
+    margin-bottom:40px;
+    color:aqua;
+}
+
+/* ===== SKILLS ===== */
+.skill-box{
+    background: rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:12px;
+    transition:0.3s;
+    backdrop-filter: blur(10px);
+}
+
+.skill-box:hover{
+    transform: translateY(-5px);
+    background: rgba(0,255,255,0.2);
+}
+
+.skill-box h5{
+    margin-bottom:10px;
+    color:aqua;
+}
+
+.skill-box p{
+    font-size:14px;
+    color:#ccc;
+}
+
+/* ===== PROJECT ===== */
+.project-box{
+    background: rgba(255,255,255,0.1);
+    padding:20px;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.project-box:hover{
+    transform:translateY(-5px);
+}
+
+/* ===== FOOTER ===== */
+footer{
+    background: rgba(0,0,0,0.8);
+    padding:40px 0;
+    margin-top:50px;
+}
+
+footer h5{
+    color:aqua;
+}
+
+footer a{
+    color:white;
+    text-decoration:none;
+}
+
+footer a:hover{
+    color:aqua;
+}
+
+/* ===== MOBILE ===== */
+@media(max-width:768px){
+    .typing{
+        font-size:28px;
+    }
+
+    .hero{
+        text-align:center;
+    }
+}
